@@ -1,2 +1,7 @@
-# Baekjoon Algorithm
-## solved.ac이용하여 푼 소스파일 저장소
+# Baekjoon Online judge   
+
+## 목표
+하루 2문제 이상 꾸준히 풀기
+
+## 알고리즘
+<https://www.acmicpc.net/step>에서 단계별로 풀어보기
