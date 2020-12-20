@@ -1,4 +1,4 @@
-# Baekjoon Online judge 단계별로풀기   
+# Baekjoon Online judge 단계별로풀기 소스코드   
 
 ## 목표
 하루 2문제 이상 꾸준히 풀기
