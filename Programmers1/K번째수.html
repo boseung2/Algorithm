@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+        function solution(array, commands) {
+            var answer = [];
+
+            // commands를 하나씩 꺼낸다
+            while(command = commands.shift()) {
+                // commmand에 맞게 배열을 자른다
+                let slicedArray = array.slice(command[0]-1, command[1]);
+                // 자른 배열을 정렬한다
+                slicedArray.sort((a, b) => a - b);
+                // 자른 배열의 commands에 맞는 번째 수를 고른다
+                // 고른 수를 answer에 추가한다.
+                answer.push(slicedArray[command[2]-1]);   
+            }
+            
+            return answer;
+        }
+
+        const array = [1, 5, 2, 6, 3, 7, 4];
+        const commands = [[2, 5, 3], [4, 4, 1], [1, 7, 3]];
+
+        console.log(solution(array, commands));
+
+    </script>
+</body>
+</html>
